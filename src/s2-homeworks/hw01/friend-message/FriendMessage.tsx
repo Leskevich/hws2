@@ -3,8 +3,8 @@ import s from './FriendMessage.module.css'
 import {MessageType} from "../HW1";
 
 // создать тип вместо any и отобразить приходящие данные
-type FriendMessageType={
-    message:MessageType
+type FriendMessageType = {
+    message: MessageType
 }
 const FriendMessage = ({message}: FriendMessageType) => {
     return (
@@ -15,9 +15,8 @@ const FriendMessage = ({message}: FriendMessageType) => {
             <div className={s.friendImageAndText}>
                 <img
                     id={'hw1-friend-avatar-' + message.id}
-                    // создаёт студент
-
                     src={message.user.avatar}
+                    alt={'avatar'}
                 />
                 <div className={s.friendText}>
                     <div
@@ -25,7 +24,6 @@ const FriendMessage = ({message}: FriendMessageType) => {
                         className={s.friendName}
                     >
                         {/*создаёт студент*/}
-
                         {message.user.name}
                     </div>
                     <pre
@@ -33,8 +31,6 @@ const FriendMessage = ({message}: FriendMessageType) => {
                         className={s.friendMessageText}
                     >
                         {message.message.text}
-
-                        {/**/}
                     </pre>
                 </div>
             </div>
@@ -44,7 +40,6 @@ const FriendMessage = ({message}: FriendMessageType) => {
             >
                 {message.message.time}
 
-                {/**/}
             </div>
         </div>
     )
