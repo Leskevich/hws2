@@ -1,13 +1,18 @@
 .message {
+    width: 462px;
+    height: 77px;
+    left: 70px;
+    top: 275px;
 
 
 }
 
 .imageAndText {
-
+display: flex;
 }
 
 .imageAndText img {
+width: 48px;
 
 }
 
