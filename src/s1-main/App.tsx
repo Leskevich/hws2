@@ -7,17 +7,6 @@ import HW4 from "../s2-homeworks/hw04/HW4";
 
 function App() {
 
-    const a:any = [
-        {name:'fbbd', age:15, },
-        {name:'fbbd', age:15, },
-        {name:'fbbd', age:15, },
-        {name:'fbbd', age:15, },
-    ]
-    console.log(a.reduce((acc:any,el:any)=>{
-        acc[el.name]={...el}
-        delete acc[el.name].name
-        return acc
-    },{}))
     return (
         <div className={s.App}>
             <HW1/>
