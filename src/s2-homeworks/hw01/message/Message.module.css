@@ -1,23 +1,27 @@
 .message {
-    width: 462px;
-    height: 77px;
-    left: 70px;
-    top: 275px;
 
-
+    align-self: flex-end;
 }
 
 .imageAndText {
-display: flex;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .imageAndText img {
-width: 48px;
+    margin: 0 0 5px 25px;
+    width: 48px;
+    height: 48px;
 
 }
 
 .text {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #0066CC;
+    border-radius: 10px;
+    padding: 8px 14px;
 }
 
 .text:after {
@@ -25,14 +29,30 @@ width: 48px;
 }
 
 .name {
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
 }
 
 .messageText {
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .time {
-
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
 
 }

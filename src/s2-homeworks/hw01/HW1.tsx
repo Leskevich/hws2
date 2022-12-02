@@ -59,9 +59,10 @@ const HW1 = () => {
             <div className={s2.hw}>
                 <div className={s2.hwTitle}>Homework #1</div>
                 <hr/>
-                <div className={s2.contener}>
+                <div className={s2.container}>
                     <Message message={message0}/>
                     <FriendMessage message={friendMessage0}/>
+
                 </div>
                 <div>
                     <MessageSender M={Message}/>
