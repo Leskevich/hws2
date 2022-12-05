@@ -1,8 +1,16 @@
 .App {
     width: 1280px;
+
 }
 
+.hw{
+    margin: 20px 70px;
+}
 
 .hwTitle {
-
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0 0 10px 70px;
 }

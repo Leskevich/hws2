@@ -9,9 +9,10 @@ export type UserType = {
 }
 
 export const homeWorkReducer = (state: UserType[] , action: ActionType): UserType[] => { // need to fix any
+    const copyState:UserType[]=[...state]
     switch (action.type) {
         case 'sort': { // by name
-            return [...state.sort(action.payload === 'down'
+            return [...copyState.sort(action.payload === 'down'
                 ?(a: UserType, b: UserType) => a.name < b.name ? 1 : -1
                 :(a: UserType, b: UserType) => a.name < b.name ? -1 : 1)]// need to fix
         }
@@ -20,6 +21,6 @@ export const homeWorkReducer = (state: UserType[] , action: ActionType): UserTyp
                  // need to fix
         }
         default:
-            return state
+            return copyState
     }
 }
