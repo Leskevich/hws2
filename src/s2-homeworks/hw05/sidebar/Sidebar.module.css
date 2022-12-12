@@ -1,16 +1,24 @@
 .sidebar {
+    background-color: #0080FF;
+    width: 317px;
+
 }
 
 .sidebar.open {
+
 }
 
 .background {
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav a {
+
 }
 
 .nav a:hover {
@@ -19,7 +27,11 @@
 .nav a.active {
     color: #00cc22;
 }
+
 .close {
+    border: none;
+    background-color: #0080FF;
+    margin: 16px 24px 0 269px;
 }
 
 .close img {
