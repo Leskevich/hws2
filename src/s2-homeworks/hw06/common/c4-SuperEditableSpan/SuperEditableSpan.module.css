@@ -1,4 +1,5 @@
 .spanBlock {
+    margin: 32px 0 28px 4px;
 }
 
 .span {
@@ -8,4 +9,6 @@
 }
 
 .pen {
+    margin-right: 14px;
+
 }
