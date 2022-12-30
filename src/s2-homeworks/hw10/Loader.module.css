@@ -1,3 +1,21 @@
-.loader {
-    /*свг и/или анимация*/
+.logo{
+    margin-top: 33px;
 }
+.button{
+    margin-top: 47px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: Ellipse-spin infinite 1s linear;
+    }
+}
+@keyframes Ellipse-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
